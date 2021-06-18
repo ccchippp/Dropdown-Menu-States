@@ -9,5 +9,7 @@ export default class Select {
 }
 
 function setupCustomElement(select) {
-
+    select.customElement.classlist.add('custom-select-container')
+    select.labelElement.classlist.add('custom-select-value')
+    select.customElement.append(select.labelElement)
 }
