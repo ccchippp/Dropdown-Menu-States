@@ -5,6 +5,7 @@ export default class Select {
         this.labelElement = document.createElement('span')
         this.optionsCustomElement = document.createElement('ul')
         setupCustomElement(this)
+        element.after(this.customElement)
     }
 }
 
