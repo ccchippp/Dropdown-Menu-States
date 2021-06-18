@@ -4,5 +4,10 @@ export default class Select {
         this.customElement = document.createElement('div')
         this.labelElement = document.createElement('span')
         this.optionsCustomElement = document.createElement('ul')
+        setupCustomElement(this)
     }
+}
+
+function setupCustomElement(select) {
+
 }
