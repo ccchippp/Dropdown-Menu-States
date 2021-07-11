@@ -16,6 +16,9 @@ function setupCustomElement(select) {
     select.customElement.append(select.labelElement)
 
     select.optionsCustomElement.classList.add('custom-select-options')
+    select.options.forEach(option => {
+        const optionElement = document.createElement('li')
+    })
     select.customElement.append(select.optionsCustomElement)
 }
 
