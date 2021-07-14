@@ -8,11 +8,16 @@ export default class Select {
         setupCustomElement(this)
         element.after(this.customElement)
     }
+    
+    get selectedOption() {
+        return this.options.find(option => option.selected)
+    }
 }
 
 function setupCustomElement(select) {
     select.customElement.classList.add('custom-select-container')
     select.labelElement.classList.add('custom-select-value')
+    select.labelElement.innerText = select.selectedOption.value
     select.customElement.append(select.labelElement)
 
     select.optionsCustomElement.classList.add('custom-select-options')
