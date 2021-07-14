@@ -21,6 +21,7 @@ function setupCustomElement(select) {
         optionElement.classList.add('custom-select-option')
         optionElement.classList.toggle('selected', option.selected)
         optionElement.innerText = option.label
+        optionElement.dataset.value = option.value
     })
     select.customElement.append(select.optionsCustomElement)
 }
