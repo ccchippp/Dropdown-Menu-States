@@ -32,7 +32,7 @@ function setupCustomElement(select) {
 }
 
 function getFormattedOptions(optionElements) {
-    [...optionElements].map(optionElement => {
+    return[...optionElements].map(optionElement => {
         return {
             value: optionElement.value,
             label: optionElement.label,
