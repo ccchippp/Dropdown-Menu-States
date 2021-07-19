@@ -1,0 +1,6 @@
+.custom-select-container,
+.custom-select-value,
+.custom-select-options,
+.custom-select-option {
+    box-sizing: border-box;
+}
