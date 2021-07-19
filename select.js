@@ -1,5 +1,3 @@
-import styles from 'select.css'
-
 export default class Select {
     constructor(element) {
         this.element = element

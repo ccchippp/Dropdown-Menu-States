@@ -4,3 +4,16 @@
 .custom-select-option {
     box-sizing: border-box;
 }
+
+.custom-select-value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.custom-select-value::after {
+    content: '';
+    display: inline-block;
+    border: 4px solid transparent;
+    border-top-color: black;
+}
